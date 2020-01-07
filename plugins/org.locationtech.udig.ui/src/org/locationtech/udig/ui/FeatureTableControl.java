@@ -68,7 +68,7 @@ import org.opengis.filter.Filter;
 import org.opengis.filter.Id;
 import org.opengis.filter.identity.FeatureId;
 
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 /**
  * A TreeViewer control for viewing a table of SimpleFeature attributes.
@@ -800,7 +800,7 @@ public class FeatureTableControl implements ISelectionProvider {
 
         Id filter = selectionProvider.getId();
 
-        sort(new SelectionComparator(filter, SWT.UP, new FIDComparator(SWT.DOWN)), SWT.UP, null);
+        sort(new SelectionComparator(filter, SWT.UP, new FIDComparator(SWT.UP)), SWT.UP, null);
         table.setTopIndex(0);
     }
 

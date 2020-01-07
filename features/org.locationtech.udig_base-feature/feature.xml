@@ -2,7 +2,7 @@
 <feature
       id="org.locationtech.udig_base-feature"
       label="org.locationtech.udig_base-feature"
-      version="2.1.0.qualifier"
+      version="2.2.0.qualifier"
       provider-name="Refractions Research"
       plugin="org.locationtech.udig_base">
 
@@ -785,5 +785,12 @@ If you add a depenedncy on any aspect of &quot;org.eclipse.*&quot; then please a
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+      
+   <plugin
+         id="org.apache.commons.codec"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>         
 
 </feature>

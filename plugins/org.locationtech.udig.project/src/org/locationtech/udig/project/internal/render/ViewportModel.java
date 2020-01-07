@@ -25,8 +25,8 @@ import org.geotools.referencing.crs.DefaultEngineeringCRS;
 import org.joda.time.DateTime;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.Envelope;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Envelope;
 
 /**
  * TODO Purpose of org.locationtech.udig.project.internal.render
@@ -43,17 +43,6 @@ public interface ViewportModel extends EObject, IMapDisplayListener, IViewportMo
      * The CRS used if the preferences indicate an illegal EPSG code
      */
     CoordinateReferenceSystem BAD_DEFAULT = DefaultEngineeringCRS.GENERIC_2D;
-
-    /**
-     * A Default setting to use for the viewport CRS.
-     */
-    public static final CoordinateReferenceSystem DEFAULT_CRS = ViewportModelImpl.getDefaultCRS();
-
-    /**
-     * A Default setting to use for the viewport screen size.
-     */
-    public static final ReferencedEnvelope NIL_BBOX = new ReferencedEnvelope(0, 0, 0, 0,
-            DEFAULT_CRS);
 
     /**
      * Returns the local coordinate system. The local coordinate system is the CRS that all the

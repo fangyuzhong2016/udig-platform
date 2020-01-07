@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="uDig" uid="org.locationtech.udig-product" id="org.locationtech.udig.product" application="org.locationtech.udig.ui.application" version="2.1.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="uDig" uid="org.locationtech.udig-product" id="org.locationtech.udig.product" application="org.locationtech.udig.ui.application" version="2.2.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="./icons/about.png"/>
@@ -14,7 +14,7 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Xmx386M -Dosgi.parentClassloader=ext -Dorg.eclipse.emf.ecore.plugin.EcorePlugin.doNotLoadResourcesPlugin=true -XX:MaxPermSize=256m</vmArgs>
+      <vmArgs>-Xmx386M -Dosgi.parentClassloader=ext -Dorg.eclipse.emf.ecore.plugin.EcorePlugin.doNotLoadResourcesPlugin=true</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Djava.awt.headless=true</vmArgsMac>
    </launcherArgs>
 

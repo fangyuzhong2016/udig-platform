@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Tests Plug-in
 Bundle-SymbolicName: org.locationtech.udig.tool.edit.tests
-Bundle-Version: 2.1.0.qualifier
+Bundle-Version: 2.2.0.qualifier
 Bundle-Activator: org.locationtech.udig.tool.edit.tests.TestsPlugin
 Bundle-Vendor: udig.refractions.net
 Require-Bundle: org.eclipse.ui,
@@ -14,6 +14,7 @@ Require-Bundle: org.eclipse.ui,
  org.locationtech.udig.ui,
  org.locationtech.udig.ui.tests,
  org.junit;bundle-version="[4.0.0,5.0.0)",
- org.locationtech.udig.project.ui.tests
+ org.locationtech.udig.project.ui.tests,
+ org.easymock;bundle-version="2.4.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
