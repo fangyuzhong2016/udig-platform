@@ -330,10 +330,6 @@ public class Messages extends NLS {
 
     public static String MapPreferences_defaultCRS;
 
-    public static String RenderPreferences_tiledRendering;
-
-    public static String RenderPreferences_tilingRendererPref;
-
     public static String RenderPreferences_transparencies;
 
     public static String RenderPreferences_antialiasing;
@@ -676,6 +672,7 @@ public class Messages extends NLS {
 
     public static String PREFERENCES_LINK_TO_GENERAL_PAGE;
 
+    public static String MapToolPaletteCategoryNameFallback;
     static {
         // initialize resource bundle
         NLS.initializeMessages(BUNDLE_NAME, Messages.class);

@@ -2,12 +2,11 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %plugin.name
 Bundle-SymbolicName: org.locationtech.udig.help; singleton:=true
-Bundle-Version: 2.2.0.qualifier
+Bundle-Version: 2.3.0.qualifier
 Bundle-Vendor: udig.refractions.net
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.help.base,
  org.eclipse.help.ui,
- org.eclipse.ui.cheatsheets,
  org.locationtech.udig.style.sld,
  org.locationtech.udig.project.ui,
  org.locationtech.udig.project.ui.editor,

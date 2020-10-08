@@ -15,23 +15,24 @@ import org.locationtech.udig.project.internal.render.impl.ScaleUtils;
 /**
  * Constant definitions for plug-in preferences
  */
-public class PreferenceConstants {
+public final class PreferenceConstants {
+    private PreferenceConstants() {
+    }
 
-	public static final String P_ANTI_ALIASING = "antiAliasingPreference"; //$NON-NLS-1$
+    public static final String P_ANTI_ALIASING = "antiAliasingPreference"; //$NON-NLS-1$
 
-	public static final String P_TRANSPARENCY = "transparencyPreference"; //$NON-NLS-1$
+    public static final String P_TRANSPARENCY = "transparencyPreference"; //$NON-NLS-1$
 
-	/**
-	 * The default crs assigned to a new map.  -1 indicates the crs of the first layer added should be used.
-	 */
-	public static final String P_DEFAULT_CRS = "defaultCRSPreference"; //$NON-NLS-1$
+    /**
+     * The default crs assigned to a new map. -1 indicates the crs of the first layer added should
+     * be used.
+     */
+    public static final String P_DEFAULT_CRS = "defaultCRSPreference"; //$NON-NLS-1$
 
     public static final String P_DEFAULT_PALETTE = "defaultPalette"; //$NON-NLS-1$
 
     public static final String P_BACKGROUND = "backgroundColor"; //$NON-NLS-1$
 
-    public static final String P_TILING_RENDERER = "tilingRendererActivated"; //$NON-NLS-1$
-    
     public static final String P_SELECTION_COLOR = "P_SELECTION_COLOR"; //$NON-NLS-1$
     public static final String P_SELECTION2_COLOR = "P_SELECTION2_COLOR"; //$NON-NLS-1$
 
@@ -57,13 +58,15 @@ public class PreferenceConstants {
     public static final String P_MAX_UNDO = "P_MAX_UNDO"; //$NON-NLS-1$
 
     public static final String P_DEFAULT_FEATURE_EDITOR = "P_DEFAULT_FEATURE_EDITOR"; //$NON-NLS-1$
-    
 
     /**
-     * The on/off switch for using tiled rendering
+     * Constant to denote that the render job is to be shown in the UI. Per default render jobs are
+     * shown in progress view and are not hidden.
+     * <p>
+     * If the property is <code>true</code> then jobs are not shown in Progress View.
      */
-    public static final String P_TILED_RENDERING = "P_TILED_RENDERING";  //$NON-NLS-1$
-    
+    public static final String P_HIDE_RENDER_JOB = "HIDE_RENDER_JOB"; //$NON-NLS-1$
+
     /**
      * The property value for the preferred scale to ZOOM IN when extents of the layer
      * are not really correct or too small to be zoomed and displayed.
@@ -75,8 +78,7 @@ public class PreferenceConstants {
      * 
      */
     public static final String P_MINIMUM_ZOOM_SCALE = "P_MINIMUM_ZOOM_SCALE"; //$NON-NLS-1$
-    
-    
+
     /**
      * If this property contains <code>true</code> then no matter what are the bounds of feature events,
      * all the viewport will be refreshed by render manager.
@@ -89,9 +91,7 @@ public class PreferenceConstants {
      * 
      */
     public static final String P_FEATURE_EVENT_REFRESH_ALL = "P_FEATURE_EVENT_REFRESH_ALL"; //$NON-NLS-1$
-    
-    
-    
+
     /**
      * This property says to <code>LabelCacheDefault</code> whether to ignore labels overlapping checkings
      * or to force them no matter what is a "spaceAround" parameter of the TextSymbolizer in SLD style.
@@ -100,12 +100,10 @@ public class PreferenceConstants {
      * are rendered.
      */
     public static final String P_IGNORE_LABELS_OVERLAPPING = "P_IGNORE_LABELS_OVERLAPPING"; //$NON-NLS-1$
-    
-    
-    
+
     /**
-     * The property forces to make checking for layers diplicating - from the same georesource - in context
-     * of the map where new layers are added.
+     * The property forces to make checking for layers duplicating - from the same georesource - in
+     * context of the map where new layers are added.
      * <p>
      * If the property is <code>true</code> then no duplicate layers are possible.
      */
@@ -116,5 +114,5 @@ public class PreferenceConstants {
      *
      * @see ScaleUtils#calculateClosestScale
      */
-	public static final String P_ZOOM_REQUIRED_CLOSENESS = "P_ZOOM_REQUIRED_CLOSENESS";
+    public static final String P_ZOOM_REQUIRED_CLOSENESS = "P_ZOOM_REQUIRED_CLOSENESS";
 }

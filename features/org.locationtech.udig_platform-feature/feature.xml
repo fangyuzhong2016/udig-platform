@@ -2,7 +2,7 @@
 <feature
       id="org.locationtech.udig_platform-feature"
       label="org.locationtech.udig_platform-feature"
-      version="2.2.0.qualifier"
+      version="2.3.0.qualifier"
       provider-name="Refractions Research"
       plugin="org.locationtech.udig.catalog">
 
@@ -193,5 +193,12 @@ License v1.0 (http://www.eclipse.org/org/documents/edl-v10.html).
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <plugin
+         id="org.locationtech.udig.log4j.appender"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
 
 </feature>
